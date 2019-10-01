@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -28,10 +28,11 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Registrarse <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="registro.php" >Registrarse <span class="sr-only">(current)</span></a>
+              
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Iniciar Sesión</a>
+              <a class="nav-link" href="login.php">Iniciar Sesión</a>
             </li>
  <form> <img src="e.jpg" borde="0" height="500" width="500" > 
  </form>         

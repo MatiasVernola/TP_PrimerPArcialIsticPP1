@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
+<form action="index.php">
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -21,37 +22,28 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <a class="navbar-brand" href="#">Estacionamiento</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Ingrese otra vez <span class="sr-only">(current)</span></a>
-            </li>
+        
             <li class="nav-item">
               <a class="nav-link" href="#">Registrarse</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          
-        </div>
-      </nav>
-    </header>
+       </nav>     
+                
+      </header>
 
     <!-- Begin page content -->
     <main role="main" class="container">
       
-     <h1>Login</h1>
+     <h1>¡Bienvenido! crea su cuenta y establezca la contraseña</h1>
       <form action="hacerRegistro.php">
   Nombre:<br>
-  <input type="text" name="nombre" value="Mickey">
+  <input type="text" name="nombre" value="">
   <br>
   Clave:<br>
-  <input type="password" name="clave" value="Mouse">
+  <input type="password" name="clave" value="">
   <br><br>
   <input type="submit" value="Submit">
 
