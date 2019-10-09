@@ -28,8 +28,11 @@
         </button>
         
             <li class="nav-item">
-              <a class="nav-link" href="#">Registrarse</a>
+            
+              <em><a class="nav-link" href="tarifas.php">Nuestras tarifas </a></em>
+            
             </li>
+
        </nav>     
                 
       </header>
@@ -45,9 +48,12 @@
   Clave:<br>
   <input type="password" name="clave" value="">
   <br><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Crear">
 
 </form> 
+<style> <style>
+ body {background-color: red; }
+ </style>
     </main>
 
     <footer class="footer">

@@ -1,17 +1,17 @@
 <?php
 
-$CheckearNombre=$_GET['nombre'];
-$CheckearClave=$_GET['clave'];
+$CheckearNombre=$_GET['patente'];
+$CheckearClave=$_GET['horaIngreso'];
 
-$archivo=fopen('usuarios.txt', 'r');
+$archivo=fopen('vehiculos.txt', 'r');
 
     while(!feof($archivo)) 
     {
 		$objeto=json_decode(fgets($archivo));
-  		if ($CheckearNombre==$objeto->'nombre' &&  /*Este if es para checkearSiEstaEl usuario en usuarios.txt */
-  			$CheckearClave==$objeto->'clave')
+  		if ($CheckearNombre==$objeto->'patente' &&  /*Este if es para checkearSiEstaEl usuario en usuarios.txt */
+  			$CheckearClave==$objeto->'horaIngreso')
   		{
-  			header ("Location:ok.php"); /*si esta lo redirecciona a la pagina ok.php*/
+  			header ("Location:facturar.php"); /*si esta lo redirecciona a la pagina ok.php*/
   			fclose($archivo);
   			exit()
   		}
