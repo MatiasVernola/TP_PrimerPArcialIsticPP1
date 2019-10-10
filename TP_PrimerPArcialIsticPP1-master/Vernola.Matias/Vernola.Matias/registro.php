@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<form action="index.php">
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -29,7 +29,7 @@
         
             <li class="nav-item">
             
-              <a class="nav-link" href="tarifas.php">Nuestras tarifas </a>
+              <em><a class="nav-link" href="tarifas.php">Nuestras tarifas </a></em>
             
             </li>
 
@@ -48,9 +48,12 @@
   Clave:<br>
   <input type="password" name="clave" value="">
   <br><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="registar">
 
 </form> 
+<style> <style>
+ body {background-color: red; }
+ </style>
     </main>
 
     <footer class="footer">

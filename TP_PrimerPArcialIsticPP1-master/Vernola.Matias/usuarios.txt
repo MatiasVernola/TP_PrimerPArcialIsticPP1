@@ -17,5 +17,3 @@
 {"nombre":"gdfhgsdheh","clave":"134"}
 {"nombre":"gdfhgsdheh","clave":"134"}
 {"nombre":"Matias","clave":"123"}
-{"nombre":"rodorfo","clave":"123"}
-{"nombre":"marcos","clave":"123"}

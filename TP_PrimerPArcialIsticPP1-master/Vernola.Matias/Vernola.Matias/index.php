@@ -34,6 +34,9 @@
             <li class="nav-item">
               <a class="nav-link" href="login.php">Iniciar Sesión</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ingresar.php">Ingrese su auto</a>
+            </li>
  <form> <img src="e.jpg" borde="0" height="500" width="500" > 
  </form>         
           

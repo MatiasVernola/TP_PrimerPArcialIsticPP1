@@ -10,8 +10,7 @@
 	while(!feof($miArchivo))
 	 {
 		$objeto=json_decode(fgets($miArchivo));
-  		if (objeto->Usuario==$_GET['usuario']) and (objeto->Clave==$_GET['clave']);
-  		
+  		echo "<li>".$objeto->nombre."</li>";
 	 }
 	fclose($miArchivo);
 ?> 

@@ -21,32 +21,26 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Inicie Sesión, intorduzca su usuario y contraseña</a>
+        <a class="navbar-brand" href="#">Baja un cambio S.A</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Registrarse <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Iniciar Sesión</a>
+            </li>
+ <form> <img src="e.jpg" borde="0" height="500" width="500" > 
+ </form>         
           
-        
+        </div>
       </nav>
     </header>
 
-    <!-- Begin page content -->
-    <main role="main" class="container">
-      
-
-      <form action="hacerLogin.php">
-  Nombre:<br>
-  <input type="text" name="nombre" >
-
-  <br>
-  Clave:<br>
-  <input type="text" name="clave" >
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
-    </main>
-
+    
     <footer class="footer">
       <div class="container">
         <span class="text-muted">Place sticky footer content here.</span>
