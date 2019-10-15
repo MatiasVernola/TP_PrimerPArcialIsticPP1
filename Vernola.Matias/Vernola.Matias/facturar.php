@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>Baja un Cambio S.A</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -21,31 +21,36 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Baja un cambio S.A</a>
+        <a class="navbar-brand" href="#">Estacionamiento</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Registrarse <span class="sr-only">(current)</span></a>
-            </li>
+        
             <li class="nav-item">
-              <a class="nav-link" href="#">Iniciar Sesión</a>
+            
+              <em><a class="nav-link" href="tarifas.php">Nuestras tarifas </a></em>
+            
             </li>
- <form> <img src="e.jpg" borde="0" height="500" width="500" > 
- </form>         
-          
-        </div>
-      </nav>
-    </header>
 
+       </nav>     
+                
+      </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <br><br>
+     <h1>¿Desea retirar su vehículo? No hay problema!
+     Ingrese la patente del rodado </h1>
+      <form action="hacerRegistro.php">
+  Patente:<br>
+  <input type="text" name="patente" value="">
+  <br>
     
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
-      </div>
-    </footer>
+  <br><br>
+
+  <input type="submit" href="cobro.php" value="Ingresar"> <!-- Una vez ungresada la patente y el tipo de vehiculo, los redirecciono a ok.php. Desde ok.php pueden ir al index.php con un boton -->
+
+  
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

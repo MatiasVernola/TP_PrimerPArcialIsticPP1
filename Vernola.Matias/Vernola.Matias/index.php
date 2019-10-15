@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>Baja un Cambio S:A </title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,11 @@
               
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.php">Iniciar Sesión</a>
+              <a class="nav-link" href="login.php">Iniciar Sesión <span class="sr-only"></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="facturar.php"> Retirar un vehículo</a>
             </li>
  <form> <img src="e.jpg" borde="0" height="500" width="500" > 
  </form>         

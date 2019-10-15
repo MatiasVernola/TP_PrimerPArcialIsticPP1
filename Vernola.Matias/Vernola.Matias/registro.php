@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<form action="index.php">
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -48,7 +47,7 @@
   Clave:<br>
   <input type="password" name="clave" value="">
   <br><br>
-  <input type="submit" value="Crear">
+  <input type="submit" href="ingresar.php" value="Crear"> <!-- Aca lo que hace es al darle submit, te envia a la pagina ingresar.php para que ingrese la patente del auto-->
 
 </form> 
 <style> <style>
