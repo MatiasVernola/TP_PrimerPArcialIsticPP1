@@ -1,2 +1,3 @@
-Esta carpeta tendría que haber reemplazado a todas las demas. El href del index.php ahora dice "registro.php" pero no lo direcciona.
-Carpeta hecha el 30/09/2019
+Esta carpeta tendría que haber reemplazado a todas las demas. 
+Carpeta hecha el 30/09/2019.
+Ultima modificación: martes 14/10
