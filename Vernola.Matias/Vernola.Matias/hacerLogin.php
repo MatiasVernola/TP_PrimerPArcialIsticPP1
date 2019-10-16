@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $CheckearNombre=$_GET['nombre'];
 $CheckearClave=$_GET['clave'];
@@ -11,6 +12,7 @@ $archivo=fopen('usuarios.txt', 'r');
   		if ($CheckearNombre==$objeto->nombre &&  /*Este if es para checkearSiEstaEl usuario en usuarios.txt */
   			$CheckearClave==$objeto->clave)
   		{
+  			$_SESSION['nombre']=$_GET['nombre'];
   			header ("Location:ok.php"); /*si esta lo redirecciona a la pagina ok.php*/
   			fclose($archivo);
   			exit();
