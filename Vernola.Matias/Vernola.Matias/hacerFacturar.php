@@ -1,27 +1,39 @@
 <?php
-
-$Patente=$_GET['patente'];
-$horaIngreso=$_GET['horaIngreso'];
-
-$archivo=fopen('ingresados.txt', 'r');
-
-    while(!feof($archivo)) 
+$precio=100;
+$patente2 = $_GET['patente'];
+$archivo = fopen('listadoEst.txt', 'r');
+while(!feof ($archivo))
+{
+  $objeto = json_decode(fgets($archivo));
+    if ($objeto->Patente == $patente2)
     {
-		$objeto=json_decode(fgets($archivo));
-  		if ($Patente==$objeto->'patente' &&  /*Este if es para checkearSiEstaEl auto en ingresados.txt */
-  			$horaIngreso==$objeto->'horaIngreso')
-  		{
-  			header ("Location:cobro.php"); /*si esta lo redirecciona a la pagina cobro.php*/
-  			fclose($archivo);
-  			exit()
-  		}
-	    else 
-	    {
-	    	header("Location: no.php");
-	    	fclose($archivo);
-	    	exit()
-	    }
-	 }
-	fclose($archivo);
-
-?> 
+    
+        date_default_timezone_set('America/Argentina/Buenos_Aires');
+        $horaSalida = mktime();
+        $tiempo = $horaSalida - $objeto->horaIngreso;
+        $cobrar = ($tiempo / 60 /60) * $precio;
+    
+       $objetoFacturado = new stdClass();
+       date_default_timezone_set('America/Argentina/Buenos_Aires');
+       $objetoFacturado->Vehiculo = $patente2;
+       $objetoFacturado->fechaEntrada = date("d-m-y H:i",$objeto->horaIngreso);
+       $objetoFacturado->fechaSalida = date("d-m-y H:i",$horaSalida);
+       $objetoFacturado->importe = $cobrar;
+    
+       $archivo1 = fopen('facturados.txt', 'a');
+       fwrite($archivo1, json_encode($objetoFacturado)."\n");
+       fclose($archivo1);
+       
+       
+       header("Location: cobrar.php &cobrar=".$cobrar."&ingreso=".$objeto->horaIngreso."&salida=".$horaSalida."&patente=".$patente2);
+       break;
+    
+   }
+   else
+   {
+       header("Location: vehiculoInex.php");
+   }
+ 
+}
+fclose($archivo);
+?>

@@ -41,7 +41,7 @@
       <br><br>
      <h1>¿Desea retirar su vehículo? No hay problema!
      Ingrese la patente del rodado </h1>
-      <form action="hacerRegistro.php">
+      <form action="hacerFacturar.php">
   Patente:<br>
   <input type="text" name="patente" value="">
   <br>
