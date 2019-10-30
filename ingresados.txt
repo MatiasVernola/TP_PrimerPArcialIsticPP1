@@ -1,0 +1,4 @@
+{"patente":null,"horaIngreso":null}
+{"patente":null,"horaIngreso":null}
+{"patente":"aaa555","horaIngreso":null}
+{"patente":"bbb888","horaIngreso":1572390734}

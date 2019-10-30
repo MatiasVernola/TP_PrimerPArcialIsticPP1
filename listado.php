@@ -1,24 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
 
-<?
+<h2>Listado de usuario</h2>
 
-$miPatenteParaCobrar=$_GET['patente'];
+<ol>
+	<?php
+	$miArchivo = fopen("usuarios.txt", "r") ;
+	while(!feof($miArchivo))
+	 {
+		$objeto=json_decode(fgets($miArchivo));
+  		if (objeto->Usuario==$_GET['usuario']) and (objeto->Clave==$_GET['clave']);
+  		
+	 }
+	fclose($miArchivo);
+?> 
 
-$miArchivo = fopen("estacionados.txt", 'r')
-while (!feof($miArchivo))
-{
-	$objeto=json_decode(fgets($miArchivo));
-	if($objeto->patente==$miPatenteParaCobrar)
-	{
-     $ahora=mktime();
-     $TiempoTrascurrido= $ahora-$objeto->fechaIngreso;
-     //var_dump(%TiempoTrascurrido);
-     //die();
-     $importe=($tiempoTrascurrido/60)*100;
-     $objeto->importe=$importe;
-     $objeto->fechaSalida=$ahora;
-     //ahora tengo que guardar en el archivo facturados.txt con un fope, el mismo codigo que sue en registro.php
-     break;
-	}
+</ol> 
 
-}
-fclose($miArchivo)
+</body>
+</html>
+
+ESTE CODIGO ESTÁ MAL. COPIAR Y PEGAR LOS CÓDIGOS DE PABLO BONADUCE
