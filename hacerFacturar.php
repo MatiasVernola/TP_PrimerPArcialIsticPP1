@@ -1,11 +1,11 @@
 <?php
 $precio=100;
 $patente2 = $_GET['patente'];
-$archivo = fopen('listadoEst.txt', 'r');
+$archivo = fopen('ingresados.txt', 'r');
 while(!feof ($archivo))
 {
   $objeto = json_decode(fgets($archivo));
-    if ($objeto->Patente == $patente2)
+    if ($archivo->patente == $patente2)
     {
     
         date_default_timezone_set('America/Argentina/Buenos_Aires');
@@ -29,9 +29,9 @@ while(!feof ($archivo))
        break;
     
    }
-   else
+   //else
    {
-       header("Location: vehiculoInex.php");
+    //   header("Location: vehiculoInex.php");
    }
  
 }

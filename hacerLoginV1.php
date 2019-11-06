@@ -12,7 +12,7 @@ include 'AccesoDatos.php';
     foreach($datos as $usuario) //con esto reemplazo el while
     {
 		
-  		if ($CheckearNombre==$usuario["nombre"] &&  /*Este if es para checkearSiEstaEl usuario en usuarios.txt */
+  		if ($CheckearNombre==$usuario["nombre"] &&  /*Este if es para checkearSiEstaEl usuario en la tabala usuarios de mi base de datos istic2019*/
   			$CheckearClave==$usuario["clave"])
   		{
   			$_SESSION['nombre']=$_GET['nombre'];

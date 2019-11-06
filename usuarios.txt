@@ -20,3 +20,8 @@
 {"nombre":null,"clave":null}
 {"nombre":null,"clave":null}
 {"nombre":null,"clave":null}
+{"nombre":"pepe","clave":"321"}
+{"nombre":"pepe","clave":"789"}
+{"nombre":"pepe","clave":"789"}
+{"nombre":"pepe","clave":"456"}
+{"nombre":"jose","clave":"jose"}

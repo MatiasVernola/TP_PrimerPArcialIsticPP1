@@ -48,7 +48,7 @@
     
   <br><br>
 
-  <input type="submit" href="cobro.php" value="Retirar"> <!-- Una vez ungresada la patente y el tipo de vehiculo, los redirecciono a ok.php. Desde ok.php pueden ir al index.php con un boton -->
+  <input type="submit"  value="Retirar"> 
 
   
 

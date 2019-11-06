@@ -2,3 +2,9 @@
 {"patente":null,"horaIngreso":null}
 {"patente":"aaa555","horaIngreso":null}
 {"patente":"bbb888","horaIngreso":1572390734}
+{"patente":"aaa888","horaIngreso":1572999986}
+{"patente":"aaa888","horaIngreso":1573000223}
+{"patente":"bbb999","horaIngreso":1573000449}
+{"patente":"bbb999","horaIngreso":1573000556}
+{"patente":"bbb999","horaIngreso":1573000598}
+{"patente":"bbb999","horaIngreso":1573000658}

@@ -42,7 +42,7 @@
      <h1>¡Excelente!, ya tiene su usuario creado, ahora ingrese la patente de su vehículo</h1>
       <form action="hacerIngreso.php" method="post">
   Patente:<br>
-  <input type="text" name="patente" value="">
+  <input type="text" name="patente" value="" method="post">
   <br>
   Tipo de vehículo:<br>
   <select >
@@ -53,7 +53,7 @@
   
   <br><br>
 
-  <input type="submit" value="Ingresar"> <!-- Una vez ungresada la patente y el tipo de vehiculo, los redirecciono a ok.php. Desde ok.php pueden ir al index.php con un boton -->
+  <input type="submit" value="Ingresar"> 
 
   
 

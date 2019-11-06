@@ -38,7 +38,7 @@
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link" href="Facturar.php">FACTURAR <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="facturar.php">FACTURAR <span class="sr-only">(current)</span></a>
             </li>
 
              <li class="nav-item active">
@@ -51,7 +51,7 @@
     </header>
     <!-- Begin page content -->
     <main role="main" class="container">
-     <form action="HacerFacturar.php"> 
+     <form action="hacerFacturar.php"> 
       <h1>FACTURAR</h1>
 
       <?php
