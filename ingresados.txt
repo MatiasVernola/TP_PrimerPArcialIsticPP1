@@ -8,3 +8,4 @@
 {"patente":"bbb999","horaIngreso":1573000556}
 {"patente":"bbb999","horaIngreso":1573000598}
 {"patente":"bbb999","horaIngreso":1573000658}
+{"patente":"ad 456 re","horaIngreso":1573066648}

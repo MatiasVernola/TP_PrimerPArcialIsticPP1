@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Baja un Cambio S:A </title>
+    <title>Baja un Cambio S.A </title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -32,8 +32,16 @@
               
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.php">Iniciar Sesión <span class="sr-only"></a>
+              <a class="nav-link" href="login.php">Iniciar Sesión <span class="sr-only"> </span></a>
             </li>
+
+            
+            <li class="nav-item">
+              <a class="nav-lin"
+            href="estacionados.php"> Vehículos estacionados <span class="sr-only" ></span>
+            </a>
+          </li>
+
 
             <li class="nav-item">
               <a class="nav-link" href="facturar.php"> Retirar un vehículo</a>

@@ -1,0 +1,2 @@
+{"Vehiculo":"aaa 333","fechaEntrada":"31-12-69 21:00","fechaSalida":"06-11-19 16:20","importe":43696334.833333}
+{"Vehiculo":"aaa 333","fechaEntrada":"31-12-69 21:00","fechaSalida":"06-11-19 16:21","importe":43696335.194444}

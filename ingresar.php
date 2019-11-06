@@ -25,6 +25,12 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.php" >Volver al menú  <span class="sr-only">(current)</span></a>
+              
+            </li>
         
             <li class="nav-item">
             
@@ -39,7 +45,7 @@
     <!-- Begin page content -->
     <main role="main" class="container">
       <br><br>
-     <h1>¡Excelente!, ya tiene su usuario creado, ahora ingrese la patente de su vehículo</h1>
+     <h1>¡Excelente!, ya tiene su usuario creado, ahora ingrese la patente de su vehículo</h1> <br> <br>
       <form action="hacerIngreso.php" method="post">
   Patente:<br>
   <input type="text" name="patente" value="" method="post">
