@@ -31,19 +31,22 @@
               <a class="nav-link" href="registro.php" >Registrarse <span class="sr-only">(current)</span></a>
               
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="login.php">Iniciar Sesión <span class="sr-only"> </span></a>
             </li>
 
             
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-lin"
-            href="estacionados.php"> Vehículos estacionados <span class="sr-only" ></span>
+            href="estacionados.php"> Vehículos facturados <span class="sr-only" ></span>
             </a>
           </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="autosestacionados.php">Estacionados<span class="sr-only">(current)</span></a>
+            </li>
 
 
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="facturar.php"> Retirar un vehículo</a>
             </li>
  <form> <img src="e.jpg" borde="0" height="500" width="500" > 

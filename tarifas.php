@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="imagen.ico">
 
-    <title></title>
+    <title>Baja un cambio S.A</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">

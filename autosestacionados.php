@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>Baja un Cambio S.A</title>
+    <title>ESTACIONAMIENTO</title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -15,7 +15,7 @@
   <body>
     <header>
       <!-- Fixed navbar -->
-     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="index.php">ESTACIONAMIENTO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,32 +50,26 @@
       </nav>
     </header>
     <!-- Begin page content -->
-       <main role="main" class="container">
-        <h1>Vehiculos facturados</h1>
-      
+    <main role="main" class="container">
+      <h1>Vehiculos estacionados</h1>
+
     <?php
+  $miArchivo = fopen("ingresados.txt", "r") ;
+  while(!feof($miArchivo)) {
+    $objeto=json_decode(fgets($miArchivo));
+      if ($objeto->Usuario==$_GET['usuario']) && ($objeto->Contraseña==$_GET['contraseña']);
 
-  $totalFacturado = 0;
-
-    $archivo = fopen("facturados.txt", "r");
-    while(!feof($archivo)) 
-    {
-      $objeto = json_decode(fgets($archivo));
-      if ($objeto != "") 
-      {
-
-      echo "<li>";
-      echo "vehiculo: "  .$objeto->Vehiculo. "fecha/hora ingreso: "  .$objeto->fechaEntrada. "fecha/hora salida: "  .$objeto->fechaSalida. "cobro:$ " .$objeto->importe;
-      echo "</li>";
-
-        $totalFacturado = $totalFacturado + $objeto->importe;
-      }
-    }
-
-    echo "<h1> TOTAL FACTURADO: $".$totalFacturado."</h1>";
-    fclose($archivo);
-  ?>
+      if(isset($objeto)==true)
+        {
+          echo "<li>";
+          echo "Patente: ".$objeto->Patente."-Hora Ingreso: ".date("d-m-Y h:i:sa",$objeto->horaIngreso);
+          echo "</li>";
+        }
       
+  }
+  fclose($miArchivo);
+?> 
+  
     </main>
     <img src="est.jpg"height="400">
     <footer class="footer">

@@ -38,7 +38,7 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      
+      <br><br>
      <h1>¡Bienvenido! crea su cuenta y establezca la contraseña</h1>
       <form action="hacerRegistro.php">
   Nombre:<br>

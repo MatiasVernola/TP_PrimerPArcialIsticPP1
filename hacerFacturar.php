@@ -5,7 +5,7 @@ $archivo = fopen('ingresados.txt', 'r');
 while(!feof ($archivo))
 {
   $objeto = json_decode(fgets($archivo));
-    if ($archivo->patente == $patente2)
+    if ($objeto->patente == $patente2)
     {
     
         date_default_timezone_set('America/Argentina/Buenos_Aires');
@@ -25,7 +25,7 @@ while(!feof ($archivo))
        fclose($archivo1);
        
        
-       header("Location: cobrar.php &cobrar=".$cobrar."&ingreso=".$objeto->horaIngreso."&salida=".$horaSalida."&patente=".$patente2);
+       header("Location: cobrar.php?cobrar=".$cobrar."&ingreso=".$objeto->horaIngreso."&salida=".$horaSalida."&patente=".$patente2);
        break;
     
    }
