@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>ESTACIONAMIENTO</title>
+    <title>Baja un cambio S.A</title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -16,33 +16,26 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.php">ESTACIONAMIENTO</a>
+        <em><a class="navbar-brand" href="index.php">Baja un cmbio S.A</a></em>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="registro.php">REGISTRO<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="registro.php">Registrarse<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.php">INICIAR SESIÓN</a>
+              <a class="nav-link" href="login.php">Iniciar Sesión</a>
             </li>
             
+                      
             <li class="nav-item active">
-              <a class="nav-link" href="listadoUsuarios.php">USUARIOS<span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="listadoEst.php">ESTACIONADOS<span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="Facturar.php">FACTURAR <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="facturar.php">Facturar <span class="sr-only">(current)</span></a>
             </li>
 
              <li class="nav-item active">
-              <a class="nav-link" href="facturados.php">FACTURADOS<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="facturados.php">Vehículos facturados<span class="sr-only">(current)</span></a>
             </li>
            
           </ul>
@@ -54,17 +47,17 @@
       <h1>Vehiculos estacionados</h1>
 
     <?php
+    error_reporting(0); //esto es para que no me muestre errores
   $miArchivo = fopen("ingresados.txt", "r") ;
   while(!feof($miArchivo)) {
     $objeto=json_decode(fgets($miArchivo));
-      if ($objeto->Usuario==$_GET['usuario']) && ($objeto->Contraseña==$_GET['contraseña']);
+      
 
-      if(isset($objeto)==true)
-        {
+      
           echo "<li>";
-          echo "Patente: ".$objeto->Patente."-Hora Ingreso: ".date("d-m-Y h:i:sa",$objeto->horaIngreso);
+          echo "Patente: ".$objeto->patente."-Hora Ingreso: ".date("d-m-Y h:i:sa",$objeto->horaIngreso);
           echo "</li>";
-        }
+        
       
   }
   fclose($miArchivo);

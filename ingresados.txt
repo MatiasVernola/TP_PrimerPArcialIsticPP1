@@ -1,4 +1,3 @@
-{"patente":"aaa555","horaIngreso":null}
 {"patente":"bbb888","horaIngreso":1572390734}
 {"patente":"aaa888","horaIngreso":1572999986}
 {"patente":"aaa888","horaIngreso":1573000223}
@@ -9,3 +8,4 @@
 {"patente":"ad 456 re","horaIngreso":1573066648}
 {"patente":"ddd444","horaIngreso":1573079972}
 {"patente":"fff999","horaIngreso":1573083674}
+{"patente":"rrr888","horaIngreso":1573163005}
