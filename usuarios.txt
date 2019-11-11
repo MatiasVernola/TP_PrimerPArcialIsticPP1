@@ -28,3 +28,5 @@
 {"nombre":"pepe","clave":"pepe"}
 {"nombre":"pepe","clave":"pepe"}
 {"nombre":"pepe","clave":"pepe"}
+{"nombre":"jose adolfo","clave":"adolfo"}
+{"nombre":"delpotro","clave":"delpotro"}

@@ -27,11 +27,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="registro.php">Registrate <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link active" href="registro.php">Registrate <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.php">Ingreso</a>
+              <a class="nav-link active" href="login.php">Ingreso</a>
             </li>
              
             

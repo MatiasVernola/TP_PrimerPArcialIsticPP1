@@ -16,7 +16,7 @@
     <header>
       <!-- Fixed navbar -->
      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <em><a class="navbar-brand" href="index.php"> Baja un cambio S.A</a></em>
+        <em><a class="navbar-brand" href="index.php"> Servicio de estacionamiento</a></em>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -62,7 +62,7 @@
       {
 
       echo "<li>";
-      echo "vehiculo: "  .$objeto->Vehiculo. "fecha/hora ingreso: "  .$objeto->fechaEntrada. "fecha/hora salida: "  .$objeto->fechaSalida. "cobro:$ " .$objeto->importe;
+      echo "vehiculo: "  .$objeto->Vehiculo. "fecha/hora ingreso: "  .$objeto->fechaEntrada.  "fecha/hora salida: "  .$objeto->fechaSalida. "cobro:$ " .$objeto->importe;
       echo "</li>";
 
         $totalFacturado = $totalFacturado + $objeto->importe;
@@ -74,7 +74,7 @@
   ?>
       
     </main>
-    <img src="est.jpg"height="400">
+    <img src="estaciona.jpg"height="400">
     <footer class="footer">
       <div class="container">
         <span class="text-muted"></span>

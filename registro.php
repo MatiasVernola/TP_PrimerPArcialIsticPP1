@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>Bajá un Cambio S.A</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -21,15 +21,15 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Estacionamiento</a>
+        <em><a class="navbar-brand" href="#">Servicio de estacionamiento</a></em>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
         
-            <li class="nav-item">
-            
-              <em><a class="nav-link" href="tarifas.php">Nuestras tarifas </a></em>
-            
+            <li class="nav-item active">
+              <a class="nav-link" href="tarifas.php">Nuestras tarifas<span class="sr-only"> </span> </a>
             </li>
 
        </nav>     

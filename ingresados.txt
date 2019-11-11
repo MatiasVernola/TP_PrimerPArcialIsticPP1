@@ -9,3 +9,4 @@
 {"patente":"ddd444","horaIngreso":1573079972}
 {"patente":"fff999","horaIngreso":1573083674}
 {"patente":"rrr888","horaIngreso":1573163005}
+{"patente":"ad 456 tr","horaIngreso":1573422440}

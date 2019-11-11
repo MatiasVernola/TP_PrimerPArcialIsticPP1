@@ -21,17 +21,19 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Estacionamiento</a>
+        <em><a class="navbar-brand" href="#">Servicio de estacionamiento</a></em>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
-            <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
             
-              <em><a class="nav-link" href="tarifas.php">Nuestras tarifas </a></em>
+              <em><a class="nav-link" href="tarifas.php">Nuestras tarifas <span class="sr-only"> (current) </span></a></em>
             
             </li>
-
+           </ul>
+          </div>
        </nav>     
                 
       </header>

@@ -33,8 +33,7 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      
-
+     
       <form action="hacerLogin.php">
   Nombre:<br>
   <input type="text" name="nombre" placeholder="Nombre...">

@@ -6,13 +6,13 @@ $CheckearClave=$_GET['clave'];
 
 include 'AccesoDatos.php';
   $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-      $consulta =$objetoAccesoDato->RetornarConsulta("select nombre , clave  from usuario");
+      $consulta =$objetoAccesoDato->RetornarConsulta("select * nombre , clave  from usuario");
       $consulta->execute();
 
     foreach($datos as $usuario) //con esto reemplazo el while
     {
 		
-  		if ($CheckearNombre==$usuario["nombre"] &&  /*Este if es para checkearSiEstaEl usuario en la tabala usuarios de mi base de datos istic2019*/
+  		if ($CkeckearNombre==$usuario["nombre"] &&  /*Este if es para checkearSiEstaEl usuario en la tabala usuarios de mi base de datos istic2019*/
   			$CheckearClave==$usuario["clave"])
   		{
   			$_SESSION['nombre']=$_GET['nombre'];

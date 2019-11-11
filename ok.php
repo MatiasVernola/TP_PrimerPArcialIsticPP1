@@ -21,19 +21,20 @@
      <header>
 	 <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Estacionamiento</a>
+        <em><a class="navbar-brand" href="#">Servicio de estacionamiento</a></em>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
             
-              <em><a class="nav-link" href="index.php">Volver al menú principal </a></em> <!--Vuele a index.php-->
+              <em><a class="nav-link active" href="index.php">Volver al menú principal <span class="sr-only"> </span></a></em> <!--Vuele a index.php-->
             
             </li>
            <li class="nav-item">
             
-              <em><a class="nav-link" href="ingresar.php">Ingresar un vehículo </a></em> <!--Va a ingresar.php-->
+              <em><a class="nav-link active" href="ingresar.php">Ingresar un vehículo <span class="sr-only"></span> </a></em> <!--Va a ingresar.php-->
             
             </li>
        </nav>     
